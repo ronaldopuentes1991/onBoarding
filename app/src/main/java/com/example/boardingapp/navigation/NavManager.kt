@@ -10,6 +10,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.boardingapp.dataStore.StoreBoarding
 import com.example.boardingapp.viewModel.MainViewBoarding
 import com.example.boardingapp.views.HomeView
+import com.example.boardingapp.views.SplashScreen
 
 @Composable
 fun NavManager(){
@@ -24,6 +25,9 @@ fun NavManager(){
         }
         composable("home"){
             HomeView(navController)
+        }
+        composable("Splash"){
+            SplashScreen(navController, store.value==true)
         }
     }
 }
