@@ -72,8 +72,5 @@ fun OnBoardingPager(
                 ButtonFinish(pagerState.currentPage, navController = navController, store)
             }
         }
-//        Box(modifier = Modifier.align(Alignment.BottomCenter)){
-//            ButtonFinish(pagerState.currentPage, navController = navController, store)
-//        }
     }
 }
